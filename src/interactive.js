@@ -17,7 +17,7 @@ const clearAll = document.querySelector('#clearAll');
 
 tlGet.forEach(() => {
   clearAll.addEventListener('click', () => {
-    tlGet = tlGet.filter((t) => t.completed == false);// eslint-disable-line
+    tlGet = tlGet.filter((t) => t.completed === false);
     localStorage.setItem('taskList', JSON.stringify(tlGet));
     window.location.reload();
   });
