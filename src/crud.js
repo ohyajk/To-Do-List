@@ -43,7 +43,7 @@ if (!tlGet || !tlGet[0]) {
     localStorage.setItem('taskList', JSON.stringify(tlGet));
     const i = tlGet.indexOf(task);
     const template = `<div class="template-div">
-        <input class="check" type="checkbox" />
+        <input id="cb" class="check" type="checkbox" />
         <input class="input-text" id="input2" type="text" value="${task.description}" readonly />
         <i id="${i}"  class="ico fa-solid fa-ellipsis-vertical  del"></i>      
       </div>`;
