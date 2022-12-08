@@ -1,103 +1,115 @@
-@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-
 body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgb(75, 0, 150);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-style: normal;
+  height: 100vh;
+  width: 100%;
   margin: 0;
+  padding: 0;
+  color: rgb(45, 0, 91);
 }
 
-main {
+.active {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.fa-solid {
+  cursor: pointer;
+}
+
+.input-text {
+  background-color: rgb(240, 225, 255);
+  outline: none;
+  border: 0;
+  font-size: 20px;
+  width: 100%;
+}
+
+.wrap {
+  margin-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  width: 40%;
+  background-color: rgb(240, 225, 255);
+  box-sizing: border-box;
+  padding: 20px;
 }
 
-.list {
-  width: 60%;
-  margin-top: 100px;
-}
-
-.list-title {
+.head {
   display: flex;
   justify-content: space-between;
-  justify-items: center;
-  padding: 20px;
-  border-bottom: 1px solid #d3d3d3;
+  align-items: center;
+  width: 100%;
+  padding: 15px 10px;
+  border-bottom: 1px solid rgb(45, 0, 91);
 }
 
-.title {
-  color: #000;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 80%;
+.head h1 {
+  margin: 0;
+  padding: 0;
 }
 
-.list-form {
+.input-Div1 {
   display: flex;
-  justify-content: space-between;
-  justify-items: center;
-  padding: 20px;
-  border-bottom: 1px solid #d3d3d3;
+  padding: 15px 10px;
+  width: 100%;
+  border-bottom: 1px solid rgb(45, 0, 91);
 }
 
-.input-task {
+.input-Div2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 1px solid rgb(45, 0, 91);
+}
+
+.input-enter {
+  background-color: inherit;
+  border: 0;
+}
+
+.input-enter:hover {
+  cursor: pointer;
+  color: blueviolet;
+  size: 2;
+}
+
+.check {
+  margin-right: 15px;
+}
+
+.clear-btn {
+  width: 100%;
   outline: none;
-  color: #000;
-  border: none;
+  border: 0;
+  background-color: inherit;
+  padding: 15px 0;
+  font-weight: 500;
   font-size: 20px;
-  line-height: 80%;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.clear-btn:hover {
+  color: rgb(240, 225, 255);
+  background-color: rgb(75, 0, 150);
+}
+
+.error {
+  color: red;
   font-style: italic;
 }
 
-.btn-form {
-  font-size: 20px;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  padding-right: 0;
-}
-
-.list-item {
+.template-div {
   display: flex;
-  justify-content: space-between;
-  justify-items: center;
-  padding: 20px;
-  border-bottom: 1px solid #d3d3d3;
-}
-
-.task-item {
-  color: #000;
-  font-size: 20px;
-  line-height: 80%;
-}
-
-.task-check {
-  margin-right: 10px;
-  width: 15px;
-  height: 15px;
-  border: 1px solid #a9a9a9;
-  cursor: pointer;
-}
-
-a {
-  color: #000;
-}
-
-.task-option {
-  cursor: all-scroll;
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: #d3d3d3;
-}
-
-.footer a {
-  text-decoration: none;
-  font-size: 20px;
+  padding: 15px 10px;
+  border-bottom: 1px solid rgb(45, 0, 91);
 }
