@@ -82,10 +82,9 @@ input2.forEach((input, index) => {
 
 const dels = document.querySelectorAll('.del');
 
-dels.forEach((del) => {
-  del.addEventListener('click', (e) => {
-    const temp = e.currentTarget.id;
-    tlGet.splice(temp, 1);
+dels.forEach((del, index) => {
+  del.addEventListener('click', () => {
+    tlGet.splice(index, 1);
     localStorage.setItem('taskList', JSON.stringify(tlGet));
     window.location.reload();
   });
